@@ -17,11 +17,12 @@ def wait_key():  # await any key or quit event
             elif event.type == pygame.QUIT:
                 sys.exit()
 
+
 # setup
 os.environ['SDL_VIDEO_WINDOW_POS'] = "1100,100"   # where window is located
 bgcolor = 100, 100, 100
 pygame.init()
-screen = pygame.display.set_mode((800, 800)) # create surface 'screen;' associated with display
+screen = pygame.display.set_mode((800, 800))  # create surface 'screen;' associated with display
 image = pygame.image.load("letterbox.png").convert()  # create picture surface, convert makes it faster for blit
 screen.fill(bgcolor)
 
