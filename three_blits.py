@@ -6,7 +6,7 @@ import sys
 # blit surface to another surface
 # blit part of surface to another surface
 # blit part of a surface to itself
-
+# associated blog article at: https://gjenkinsedu.com/post/pygame_surface_blit_0005/
 
 def wait_key():  # await any key or quit event
     pygame.display.flip()  # write to screen then wait
@@ -19,10 +19,11 @@ def wait_key():  # await any key or quit event
 
 
 # setup
-os.environ['SDL_VIDEO_WINDOW_POS'] = "1100,100"   # where window is located
-bgcolor = 100, 100, 100
+os.environ['SDL_VIDEO_WINDOW_POS'] = "1450,100"   # set window location
+bgcolor = 100, 100, 100 # dark grey
+
 pygame.init()
-screen = pygame.display.set_mode((800, 800))  # create surface 'screen;' associated with display
+screen = pygame.display.set_mode((500, 800))  # create surface 'screen;' associated with display
 image = pygame.image.load("letterbox.png").convert()  # create picture surface, convert makes it faster for blit
 screen.fill(bgcolor)
 
