@@ -7,6 +7,7 @@ import sys
 # blit part of surface to another surface
 # blit part of a surface to itself
 # associated blog article at: https://gjenkinsedu.com/post/pygame_surface_blit_0005/
+# code at https://github.com/gerryjenkinslb/blit_article
 
 def wait_key():  # await any key or quit event
     pygame.display.flip()  # write to screen then wait
